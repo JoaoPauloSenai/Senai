@@ -1,0 +1,119 @@
+html {
+
+    height: 100%;
+
+}
+
+body {
+
+    height: 100%;
+    margin: 0%;
+    background-color: white;
+
+}
+
+p {
+
+    font-size: 2rem;
+    margin: 0%;
+
+}
+
+h1 {
+
+    margin: 0%;
+
+}
+
+#container {
+
+    height: 100%;
+    background-color: black;
+    color: white;
+
+}
+
+#topo {
+
+    height: 20%;
+    /* background-color: red; */
+
+}
+
+#topo-top {
+
+    height: 50%;
+    /* background-color: white; */
+    color: white;
+
+}
+
+#topo-bot {
+
+    height: 50%;
+    /* background-color: blue; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+
+}
+
+#centro {
+
+    height: 50%;
+    /* background-color: bisque; */
+    color: white;
+
+}
+#centro-topo {
+
+    height: 34%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    /* background-color: brown; */
+    color: white;
+
+}
+#centro-meio {
+
+    height: 33%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    /* background-color: green; */
+    color: white;
+
+}
+#centro-baixo {
+
+    height: 33%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: blue; */
+    color: white;
+
+}
+
+#baixo {
+
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    font-size: 2rem;
+    color: white;
+
+}
+
+.butonEscolhas {
+
+    height: 5rem;
+    width: 25rem;
+    font-size: 2rem;
+
+}

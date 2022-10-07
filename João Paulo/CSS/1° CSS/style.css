@@ -1,0 +1,165 @@
+@font-face {
+
+    font-family: 'Mex';
+    src: url(Tacos\ de\ Tijuana.ttf) format('truetype');
+
+}
+
+html{
+
+    height: 100%;
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0px;
+    background-color:brown
+
+}
+
+#container{
+
+    height: 100%;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#topo{
+
+    height: 10%;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#btn{
+
+    height: 50%;
+
+}
+
+#lbl{
+
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: 'Mex'
+    /* font-weight: bolder;     */
+
+}
+
+#inpt{
+
+    height: 50%;
+
+}
+
+
+#meio{
+
+    height: 80%;
+    width: 100%;
+    background-color:aqua;
+    display: flex;
+
+}
+
+#meio-esquerda{
+
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+
+}
+
+#meio-esquerda-cima{
+
+    height: 70%;
+    width: 100%;
+    background-color: fuchsia;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.inputs{
+
+    height: 7%;
+    width: 50%;
+    border: solid 3px black;
+    border-radius: 25px 0px 25px 0px;
+
+}
+
+
+#meio-esquerda-baixo{
+
+    height: 30%;
+    width: 100%;
+    background-color:burlywood;
+    
+}
+
+
+#meio-direita{
+
+    height: 100%;
+    width: 70%;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#img{
+
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    /* opacity: 20%;      */
+
+
+}
+
+#btn-hover{
+
+    height: 15%;
+    width: 20%;
+    /* padding-bottom: 20px; */
+    border: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+
+}
+
+#btn-hover:hover{
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 2s;
+
+}
+
+
+#baixo{
+
+    height: 10%;
+    width: 100%;
+    background-color:darkgoldenrod
+
+}
