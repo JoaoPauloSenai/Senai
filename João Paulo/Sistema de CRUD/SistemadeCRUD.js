@@ -16,65 +16,52 @@ let editaNome
 let pesquisar
 let posiçao
 
-function Cadastra (){
+function Cadastra() {
 
-    document.getElementById("baixo").innerHTML = "Frase"
+    document.getElementById("baixo").innerHTML = cadastraNome = prompt(`Digite o nome a ser Cadastrado:`)
+    arrayCadastrodeNomes.push(cadastraNome)
 
 }
 
-while (escolha != 0) {
+function Excluir() {
 
-    escolha = Number(prompt(`Escolha qual opção você deseja: 1 - Cadastrar nome, 2 - Excluir um nome, 3 - Editar um nome, 4 - Pesquisar se um nome está cadastrado, 5 - Listar todos os nomes cadastrados, 0 - Sair do programa`))
+    document.getElementById("baixo").innerHTML = excluirNome = prompt("Digite o nome a ser Excluido:")
+    posiçao = arrayCadastrodeNomes.indexOf(excluirNome)
+    arrayCadastrodeNomes.splice(posiçao, 1)
 
-    switch (escolha) {
+}
 
-        case 1:
+function Editar() {
 
-            cadastraNome = prompt(`Digite o nome a ser Cadastrado:`)
-            arrayCadastrodeNomes.push(cadastraNome)
-            alert(arrayCadastrodeNomes)
+    document.getElementById("baixo").innerHTML = excluirNome = prompt("Digite o nome a ser Editado:")
+    document.getElementById("baixo").innerHTML = editaNome = prompt("Digite o novo nome:")
+    posiçao = arrayCadastrodeNomes.indexOf(excluirNome)
+    arrayCadastrodeNomes.splice(posiçao, 1, editaNome)
 
-            break
+}
 
-        case 2:
+function Pesquisar() {
 
-            excluirNome = prompt("Digite o nome a ser Excluido:")
-            posiçao = arrayCadastrodeNomes.indexOf(excluirNome)
-            arrayCadastrodeNomes.splice(posiçao, 1)
-            alert(arrayCadastrodeNomes)
-            break
+    document.getElementById("baixo").innerHTML = pesquisar = prompt("Digite o nome a ser Pesquisado:")
 
-        case 3:
+    for (i = 0; i < arrayCadastrodeNomes.length; i++) {
 
-            excluirNome = prompt("Digite o nome a ser Editado:")
-            editaNome = prompt("Digite o novo nome:")
-            posiçao = arrayCadastrodeNomes.indexOf(excluirNome)
-            arrayCadastrodeNomes.splice(posiçao, 1, editaNome)
-            alert(arrayCadastrodeNomes)
-            break
+        if (pesquisar === arrayCadastrodeNomes[i]) {
 
-        case 4:
+            document.getElementById("baixo").innerHTML = (`${arrayCadastrodeNomes[i]} está cadastrado no sistema.`)
 
-            pesquisar = prompt("Digite o nome a ser Pesquisado:")
-
-            for (i = 0; i < arrayCadastrodeNomes.length; i++) {
-
-                if (pesquisar === arrayCadastrodeNomes[i]) {
-
-                    alert(`${arrayCadastrodeNomes[i]} está cadastrado no sistema.`)
-
-                }
-            }
-            break
-
-        case 5:
-
-            alert(arrayCadastrodeNomes)
-            break
-
-        default:
-
-            alert("0 - Sair do programa")
-
+        }
     }
+}
+
+function Listar() {
+
+    document.getElementById("baixo").innerHTML = arrayCadastrodeNomes
+
+}
+
+function Sair() {
+
+    document.getElementById("baixo").innerHTML = ("Adeus você saiu do Sistema de CRUD.")
+
 }
