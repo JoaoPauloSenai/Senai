@@ -18,37 +18,48 @@ let posiçao
 
 function Cadastra() {
 
-    document.getElementById("baixo").innerHTML = cadastraNome = prompt(`Digite o nome a ser Cadastrado:`)
+    document.getElementById("esquerda").innerHTML = cadastraNome = document.getElementById("inp").value
     arrayCadastrodeNomes.push(cadastraNome)
 
 }
 
 function Excluir() {
 
-    document.getElementById("baixo").innerHTML = excluirNome = prompt("Digite o nome a ser Excluido:")
+    document.getElementById("esquerda").innerHTML = excluirNome = document.getElementById("inp2").value
     posiçao = arrayCadastrodeNomes.indexOf(excluirNome)
-    arrayCadastrodeNomes.splice(posiçao, 1)
 
+    for (i = 0; i < arrayCadastrodeNomes.length; i++) {
+
+        if (excluirNome === arrayCadastrodeNomes[i]) {
+
+            arrayCadastrodeNomes.splice(posiçao, 1)
+
+        }
+    }
 }
 
 function Editar() {
 
-    document.getElementById("baixo").innerHTML = excluirNome = prompt("Digite o nome a ser Editado:")
-    document.getElementById("baixo").innerHTML = editaNome = prompt("Digite o novo nome:")
-    posiçao = arrayCadastrodeNomes.indexOf(excluirNome)
-    arrayCadastrodeNomes.splice(posiçao, 1, editaNome)
+    document.getElementById("esquerda").innerHTML = editaNome = document.getElementById("inp").value
+    document.getElementById("esquerda").innerHTML = excluirNome = document.getElementById("inp2").value
+    posiçao = arrayCadastrodeNomes.indexOf(editaNome)
+    if(posiçao != -1){
 
+        arrayCadastrodeNomes[posiçao] = excluirNome
+    }
+    else
+    document.getElementById("esquerda").innerHTML = ("Nome não encontrado")
 }
 
 function Pesquisar() {
 
-    document.getElementById("baixo").innerHTML = pesquisar = prompt("Digite o nome a ser Pesquisado:")
+    document.getElementById("esquerda").innerHTML = pesquisar = document.getElementById("inp").value
 
     for (i = 0; i < arrayCadastrodeNomes.length; i++) {
 
         if (pesquisar === arrayCadastrodeNomes[i]) {
 
-            document.getElementById("baixo").innerHTML = (`${arrayCadastrodeNomes[i]} está cadastrado no sistema.`)
+            document.getElementById("esquerda").innerHTML = (`${arrayCadastrodeNomes[i]} está cadastrado no sistema.`)
 
         }
     }
@@ -56,12 +67,13 @@ function Pesquisar() {
 
 function Listar() {
 
-    document.getElementById("baixo").innerHTML = arrayCadastrodeNomes
+    document.getElementById("esquerda").innerHTML = arrayCadastrodeNomes
 
 }
 
 function Sair() {
 
-    document.getElementById("baixo").innerHTML = ("Adeus você saiu do Sistema de CRUD.")
+    window.open("tchau.html")
+    document.getElementById("esquerda").innerHTML = ("Adeus você saiu do Sistema de CRUD.")
 
 }

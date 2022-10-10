@@ -25,11 +25,26 @@ h1 {
 
 }
 
+#inp2{
+
+    height: 30%;
+    width: 60%;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 110%;
+    padding-left: 2%;
+    margin: 1%;
+}
+
 #inp{
 
-    height: 50%;
-    width: 50%;
-    font-size: 3rem;
+    height: 30%;
+    width: 60%;
+    border-radius: 15px;
+    border: 0px;
+    font-size: 110%;
+    padding-left: 2%;
+    margin: 1%;
 }
 
 #container {
@@ -112,6 +127,33 @@ h1 {
     justify-content: center;
     align-items: center;
     /* background-color: red; */
+    font-size: 2rem;
+    color: white;
+
+}
+
+#direita{
+
+    height: 100%;
+    width: 67%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    font-size: 2rem;
+    color: white;
+
+}
+
+#esquerda{
+
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
     font-size: 2rem;
     color: white;
 
