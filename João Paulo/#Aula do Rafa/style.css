@@ -1,0 +1,27 @@
+body{
+
+background-color: black;
+
+}
+
+div{
+
+    border: 2px solid red;
+    margin: 5px;
+    background-color: black;
+    color: white;
+
+}
+
+p{
+
+    margin: 0%;
+    color: white;
+
+}
+
+button{
+
+    cursor: pointer;
+
+}

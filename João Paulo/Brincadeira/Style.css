@@ -1,0 +1,74 @@
+html {
+
+    height: 100%;
+
+}
+
+body {
+
+    height: 100%;
+    margin: 0%;
+
+}
+
+td{
+
+    padding: 10px;
+    border: 2px solid red;
+
+}
+
+th {
+
+    padding: 10px;
+    border: 2px solid red;
+
+}
+
+table {
+
+    border-spacing: 10px;
+    border: 2px solid red;
+    column-gap: 5%;
+    cursor: pointer;
+
+}
+
+#container {
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+
+}
+
+#topo {
+
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-left: 1%;
+
+}
+
+#meio {
+
+    height: 80%;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding-left: 1%;
+
+}
+
+#baixo {
+
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-left: 1%;
+
+}

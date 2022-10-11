@@ -40,8 +40,8 @@ function Excluir() {
 
 function Editar() {
 
-    document.getElementById("esquerda").innerHTML = editaNome = document.getElementById("inp").value
-    document.getElementById("esquerda").innerHTML = excluirNome = document.getElementById("inp2").value
+    document.getElementById("esquerda").innerHTML = excluirNome = document.getElementById("inp").value
+    document.getElementById("esquerda").innerHTML = editaNome = document.getElementById("inp2").value
     posiçao = arrayCadastrodeNomes.indexOf(editaNome)
     if(posiçao != -1){
 
