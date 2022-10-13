@@ -10,27 +10,27 @@
 
 let arrayCadastrodeNomes = []
 let escolha
-let cadastraNome
-let excluirNome
-let editaNome
-let pesquisar
+let cadastraNome = document.getElementById("inp")
+let excluirNome = document.getElementById("inp2")
+let editaNome = document.getElementById("inp3")
+let pesquisar = document.getElementById("inp")
 let posiçao
 
 function Cadastra() {
 
-    document.getElementById("esquerda").innerHTML = cadastraNome = document.getElementById("inp").value
-    arrayCadastrodeNomes.push(cadastraNome)
+    arrayCadastrodeNomes.push(cadastraNome.value)
+    document.getElementById("esquerda").innerHTML = cadastraNome.value
 
 }
 
 function Excluir() {
 
-    document.getElementById("esquerda").innerHTML = excluirNome = document.getElementById("inp2").value
-    posiçao = arrayCadastrodeNomes.indexOf(excluirNome)
+    posiçao = arrayCadastrodeNomes.indexOf(excluirNome.value)
+    document.getElementById("esquerda").innerHTML = excluirNome.value
 
     for (i = 0; i < arrayCadastrodeNomes.length; i++) {
 
-        if (excluirNome === arrayCadastrodeNomes[i]) {
+        if (excluirNome.value === arrayCadastrodeNomes[i]) {
 
             arrayCadastrodeNomes.splice(posiçao, 1)
 
@@ -40,28 +40,37 @@ function Excluir() {
 
 function Editar() {
 
-    document.getElementById("esquerda").innerHTML = excluirNome = document.getElementById("inp").value
-    document.getElementById("esquerda").innerHTML = editaNome = document.getElementById("inp2").value
-    posiçao = arrayCadastrodeNomes.indexOf(editaNome)
-    if(posiçao != -1){
+    posiçao = arrayCadastrodeNomes.indexOf(pesquisar.value)
+    if (posiçao != -1) {
 
-        arrayCadastrodeNomes[posiçao] = excluirNome
+        arrayCadastrodeNomes[posiçao] = editaNome.value
+        document.getElementById("esquerda").innerHTML = (`${editaNome.value} Foi adicionado(a) ao sistema.`)
     }
     else
-    document.getElementById("esquerda").innerHTML = ("Nome não encontrado")
+        document.getElementById("esquerda").innerHTML = ("Nome não encontrado")
 }
 
 function Pesquisar() {
 
-    document.getElementById("esquerda").innerHTML = pesquisar = document.getElementById("inp").value
+    if (arrayCadastrodeNomes != "") {
 
-    for (i = 0; i < arrayCadastrodeNomes.length; i++) {
+        for (i = 0; i < arrayCadastrodeNomes.length; i++) {
 
-        if (pesquisar === arrayCadastrodeNomes[i]) {
+            if (pesquisar.value === arrayCadastrodeNomes[i]) {
 
-            document.getElementById("esquerda").innerHTML = (`${arrayCadastrodeNomes[i]} está cadastrado no sistema.`)
+                document.getElementById("esquerda").innerHTML = (`${arrayCadastrodeNomes[i]} está cadastrado no sistema.`)
 
+            } else {
+
+                document.getElementById("esquerda").innerHTML = (`${pesquisar.value} Não está cadastrado.`)
+
+            }
         }
+    }
+    else{
+
+        document.getElementById("esquerda").innerHTML = ("A lista de cadastro esta vazia.")
+
     }
 }
 

@@ -6,13 +6,6 @@ let editaNome
 let pesquisar
 let posiçao
 
-function Cadastra (){
-
-    document.getElementById("baixo").innerHTML = cadastraNome = prompt(`Digite o nome a ser Cadastrado:`)
-    arrayCadastrodeNomes.push(cadastraNome)
-
-}
-
 while (escolha != 0) {
 
     escolha = Number(prompt(`Escolha qual opção você deseja: 1 - Cadastrar nome, 2 - Excluir um nome, 3 - Editar um nome, 4 - Pesquisar se um nome está cadastrado, 5 - Listar todos os nomes cadastrados, 0 - Sair do programa`))
