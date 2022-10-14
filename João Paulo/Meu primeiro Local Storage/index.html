@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SistemadeCRUD</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="topo">
+
+            <div id="topo-top">
+
+            </div>
+
+            <div id="topo-bot">
+
+                <h1>Sistema de CRUD</h1>
+
+            </div>
+
+        </div>
+
+        <div id="centro">
+
+            <div id="centro-topo">
+
+                <p>Escolha qual opção você deseja:</p>
+
+            </div>
+
+            <div id="centro-meio">
+
+                <button class="butonEscolhas" onclick="Cadastra()">1 - Cadastrar nome</button>
+                <button class="butonEscolhas" onclick="Excluir()">2 - Excluir um nome</button>
+                <button class="butonEscolhas" onclick="Editar()">3 - Editar um nome</button>
+
+
+            </div>
+
+            <div id="centro-baixo">
+
+                <button class="butonEscolhas" onclick="Pesquisar()">4 - Pesquisar nomes cadastrados</button>
+                <button class="butonEscolhas" onclick="Listar()">5 - Lista de nomes cadastrados</button>
+                <button class="butonEscolhas" onclick="Sair()">0 - Sair do programa</button>
+
+            </div>
+
+        </div>
+
+        <div id="baixo">
+
+            <div id="esquerda">
+
+
+                
+            </div>
+
+            <div id="direita">
+
+                <input type="text" name="input" id="inp" placeholder="Cadastrar / Pesquisar cliente:">
+                <input type="text" name="input" id="inp2" placeholder="Excluir:">
+                <input type="text" name="input" id="inp3" placeholder="Editar:">
+
+            </div>
+
+        </div>
+
+    </div>
+<script src="MeuPrimeiroLocalStorage.js"></script>
+</body>
+
+</html>
