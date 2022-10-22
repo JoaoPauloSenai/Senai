@@ -1,0 +1,193 @@
+html {
+
+    height: 100%;
+
+}
+
+body {
+
+    height: 100%;
+    margin: 0px;
+    background-color: white
+}
+
+#container {
+
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+#esquerda {
+
+    background-color: aqua;
+    height: 100%;
+    width: 17%;
+
+}
+
+#direita {
+
+    background-color: black;
+    height: 100%;
+    width: 83%;
+
+}
+
+#topo1 {
+
+    height: 15%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+
+}
+
+#topoesquerdo {
+
+    height: 100%;
+    width: 20%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#topocentro {
+
+    height: 100%;
+    width: 60%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#topodireito {
+
+    height: 100%;
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#topo2 {
+
+    height: 5%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#meio {
+
+    height: 65%;
+    width: 100%;
+    background-color: green;
+
+}
+
+#meio-label-dados-pessoais1 {
+
+    background-color: gray;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+#div-label-user{
+
+    width: 33%;
+    justify-content: start;
+
+}
+
+#div-label-pass{
+
+    width: 34%;
+    justify-content: start;
+
+}
+
+#div-input-user{
+
+    width: 33%;
+    justify-content: start;
+
+}
+
+#div-input-pass{
+
+    width: 34%;
+    justify-content: start;
+
+}
+
+#div-input-confpass{
+
+    width: 33%;
+    justify-content: start;
+
+}
+
+#div-label-conf-pass{
+
+    width: 33%;
+    justify-content: start;
+
+}
+
+#meio-input-dados-pessoais1 {
+
+    background-color: red;
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+#meio-label-dados-pessoais2
+#meio-label-dados-pessoais3
+#meio-label-dados-pessoais4
+#meio-label-dados-pessoais5
+
+#meio-input-dados-pessoais2
+#meio-input-dados-pessoais3
+#meio-input-dados-pessoais4
+#meio-input-dados-pessoais5
+
+#baixo {
+
+    height: 15%;
+    width: 100%;
+    background-color: gray
+}
+
+#input-dados-cadastrais {
+
+    height: 1rem;
+
+}
+
+#baixo{
+
+    background-color: burlywood;
+    height: 15%;
+    width: 100%;
+
+}
