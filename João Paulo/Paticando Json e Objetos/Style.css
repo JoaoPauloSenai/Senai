@@ -49,7 +49,7 @@ body {
 
     height: 100%;
     width: 20%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ body {
 
     height: 100%;
     width: 60%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,62 +97,17 @@ body {
 
 }
 
-#meio-label-dados-pessoais1 {
+#meio-separacao {
 
-    background-color: gray;
+    background-color: blue;
     height: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
 
 }
 
-#div-label-user{
-
-    width: 33%;
-    justify-content: start;
-
-}
-
-#div-label-pass{
-
-    width: 34%;
-    justify-content: start;
-
-}
-
-#div-input-user{
-
-    width: 33%;
-    justify-content: start;
-
-}
-
-#div-input-pass{
-
-    width: 34%;
-    justify-content: start;
-
-}
-
-#div-input-confpass{
-
-    width: 33%;
-    justify-content: start;
-
-}
-
-#div-label-conf-pass{
-
-    width: 33%;
-    justify-content: start;
-
-}
-
-#meio-input-dados-pessoais1 {
+.meio-dados-pessoais {
 
     background-color: red;
+
     height: 2rem;
     width: 100%;
     display: flex;
@@ -160,16 +115,6 @@ body {
     align-items: center;
 
 }
-
-#meio-label-dados-pessoais2
-#meio-label-dados-pessoais3
-#meio-label-dados-pessoais4
-#meio-label-dados-pessoais5
-
-#meio-input-dados-pessoais2
-#meio-input-dados-pessoais3
-#meio-input-dados-pessoais4
-#meio-input-dados-pessoais5
 
 #baixo {
 
@@ -184,10 +129,15 @@ body {
 
 }
 
-#baixo{
+#baixo {
 
     background-color: burlywood;
     height: 15%;
     width: 100%;
 
+}
+
+.dados-pessoais {
+    width: 33%;
+    justify-content: start;
 }
