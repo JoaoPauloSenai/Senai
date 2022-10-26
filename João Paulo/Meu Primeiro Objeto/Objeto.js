@@ -74,4 +74,24 @@ function LimpaInputs() {
 
 }
 
+function ListaUser() {
 
+    let lista = ""
+    vetor = JSON.parse(localStorage.getItem('usuarioSalvo'))
+
+    if (vetor == null) {
+        lista = "Não existem usuário cadastrados"
+    }
+
+    else {
+        for (let i = 0; i < vetor.length; i++) {
+
+            lista += Object.values(vetor[i]).join(" - ") + '<br>'
+
+        }
+
+    }
+
+    document.getElementById("Lista").innerHTML = lista
+
+}
