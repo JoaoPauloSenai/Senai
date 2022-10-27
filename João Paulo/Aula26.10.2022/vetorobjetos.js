@@ -4,19 +4,19 @@ let confSenha = document.getElementById("inputConfSenha")
 
 let vetorUsers = []
 
-function Cadastra(){
+function CadastraUser(){
 
     let usuario = {
 
         username: '',
         password: '',
-        phones: []
+        confPassword: '',
     
     }
 
     usuario.username = nome.value
     usuario.password = senha.value
-    
+    usuario.confPassword = confSenha.value
 
     vetorUsers = JSON.parse(localStorage.getItem('usuarioSalvo'))
 
